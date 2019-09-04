@@ -12,10 +12,12 @@ After you have a prefix, the program take in a list of key words/categories that
 Example: The project is a twitter bot that posts the weather. You could put in the key words: Bot, weather, and social. TW could be your prefix.
 
 The program will give a list of words that start with the prefix and they will be closer to the top if they match the key word:
+	
 	- Project TWISTER
 	- Project TWINE
 
 The program will then give a list of words like: Storm, Forum, Rain, and Auto so that  it would generate words that will append the prefix and match the key word.
+	 
 	 - Project TWSTORM
 	 - Project TWRAIN
 
