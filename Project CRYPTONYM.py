@@ -77,7 +77,7 @@ def removePrefix(category):
  
 
 #Generate a list of project names from a two capital letters in the form of a string. These project names will be any words that start with the prefix. outputFileName should be a string.
-#This will output a long list on names like Project PIANO and Project PICTRUEFRAME (in the case of a PI prefix for python), if you want names like PISTORM and PICAMERA, use generateWordNAME()
+#This will output a long list on names like Project PIANO and Project PICTRUEFRAME (in the case of a PI prefix for python)
 def generateNameList(prefix, outputFileName):
 
     #Access the global variable words and open the output file in write/create a new file mode ('w+'). This means if the user already has an output file, it will just reuse it, otherwise
@@ -114,26 +114,6 @@ def generateNameList(prefix, outputFileName):
     #Put the output dictionary into the file(f) and also indent it so that it looks nice, then close the file.
     json.dump(output, f, indent=4)
     f.close()
-
-#Generates a list of project names from two capital letters in the form of a string. These project names will append a related dictionary word to the prefix. 
-#outputFileName should be a string. keywords should be a list of strings.
-#This will output a long list of names like Project PIWEATHER and Project PIBOT (in the case of a PI prefix for python)
-def generateWordName(prefix, outputFileName, keywords):
-    f = open(outputFileName, 'w+')
-    count = 0
-    output = {}
-    for keyword in keywords:
-        #make api call. rel_[code](keyword)
-        #list = json.load(api_output)
-        #for relatedWord in list:
-        #   count++
-        #   caps = relatedWord.upper()
-        #   append = caps[2:len(caps)]
-        #   output[count] = ("Project" + prefix + append)
-        pass
-    json.dump(output, f, indent=4)
-    f.close()
-
 
 
 wordsFile.close
